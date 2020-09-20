@@ -4,22 +4,22 @@ while True:
     if mark:
         student_marks.append(int(mark))
         if int(mark) > 5:
-            print('такой оценки не существует!')
+            print('неверная оценка')
             student_marks.remove(int(mark))
         elif int(mark) <= 1:
-            print('такой оценки не существует!')
+            print('неверная оценка')
             student_marks.remove(int(mark))
     else:
         break
 
-print('Ввод завершен')
+print('ввод завершен')
 
 avg_mark = 0
 for marks in student_marks:
     avg_mark += marks
 avg_mark /= len(student_marks)
 if not student_marks:
-    print('Пусто)')
+    print('вы не ввели оценку')
 else:
-    print('Оценки:', student_marks)
-    print('Средний балл:', avg_mark)
+    print('Marks:', student_marks)
+    print('средняя оценка:', avg_mark)
