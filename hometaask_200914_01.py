@@ -3,6 +3,8 @@ while True:
     mark = int(input('ввещдите оценку студента:\n')) < 0
     if mark:
         student_marks.append(mark)
+    elif not 1 <= int(mark) <= 6:
+        print("такой оценки нет")
     else:
         break
 
